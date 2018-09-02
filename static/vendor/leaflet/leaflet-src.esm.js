@@ -7853,7 +7853,7 @@ var CircleMarker = Path.extend({
 		return this.redraw();
 	},
 
-	// @method getRadius(): Number
+	// @method get_radius(): Number
 	// Returns the current radius of the circle
 	getRadius: function () {
 		return this._radius;
@@ -7947,7 +7947,7 @@ var Circle = CircleMarker.extend({
 		return this.redraw();
 	},
 
-	// @method getRadius(): Number
+	// @method get_radius(): Number
 	// Returns the current radius of a circle. Units are in meters.
 	getRadius: function () {
 		return this._mRadius;
