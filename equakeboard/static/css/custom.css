@@ -15,8 +15,12 @@
     /*overflow: hidden;*/
 /*}*/
 
-#mapid{
-    height: 900px;
+#equake-map{
+    height: 700px;
+}
+
+#timeline-map{
+    height: 700px;
 }
 
 .legend {
@@ -34,9 +38,6 @@
     opacity: 0.7;
 }
 
-#timeMap {
-    height: 900px;
-}
 
 .leaflet-bottom.leaflet-left{
     width: 90%;

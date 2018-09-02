@@ -1,6 +1,6 @@
 
 import os
-from earthquakeboard import app
+from equakeboard import app
 
 
 if __name__ == '__main__':

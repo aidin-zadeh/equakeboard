@@ -1,7 +1,7 @@
  
 import os, inspect
 from flask import render_template, jsonify
-from earthquakeboard import app
+from equakeboard import app
 
 
 # get project root dir
@@ -12,7 +12,11 @@ ROOT_DIR = os.path.dirname(CURR_DIR)
 # home route
 @app.route('/home')
 @app.route('/')
+@app.route("/magnitude")
 def home():
-    return render_template('index.html')
+    return render_template("index.html")
 
 
+@app.route("/timeline")
+def timeline():
+    return render_template("timeline.html")

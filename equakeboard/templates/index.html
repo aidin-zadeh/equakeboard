@@ -1,0 +1,142 @@
+ 
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Dashboard to visualize the USGS earthquake data" content="">
+    <meta name="Aidin Hassanzadeh" content="">
+
+    <title>EQuakeBoard</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Page level plugin CSS-->
+    <link href="..static/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <!--leaflet pluging CSS-->
+    <link href="../static/vendor/leaflet/leaflet.css" rel="stylesheet">
+
+    <!-- Custom styles for sb-admin template-->
+    <link href="../static/css/sb-admin.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/custom.css">
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+
+    <a class="navbar-brand mr-1" href="index.html">EQuakeBoard</a>
+
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navbar Search -->
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+
+</nav>
+
+<div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="sidebar navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link"
+               href="index.html">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+               href="#"
+               id="pagesDropdown"
+               role="button"
+               data-toggle="dropdown"
+               aria-haspopup="true"
+               aria-expanded="false">
+                <i class="fas fa-fw fa-folder"></i>
+                <span>EQuake</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                <a class="dropdown-item" href="magnitude" id="equake-magnitude-link">Magnitude</a>
+                <a class="dropdown-item" href="timeline" id="equake-timeline-link">Time Line</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="charts.html">
+                <i class="fas fa-fw fa-chart-area"></i>
+                <span>Charts</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tables.html">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Tables</span></a>
+        </li>
+    </ul>
+
+    <div id="content-wrapper">
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">Overview</li>
+        </ol>
+        <div class="card mb-3">
+            <div class="card-header" id="equake-map-header">
+                <i class="fas fa-map"></i>
+            </div>
+            <div class="card-body">
+                <div id="equake-map" width="100%" height="30"></div>
+                <div class="card-text">The marker color and its size correspond to the magnitude of the earthquak. Black lines correspond to fault lines. Click on markers for further information.</div>
+                </div>
+            </div>
+            <div class="card-footer small text-muted" id-="equake-map-footer">Updated yesterday at 11:59 PM</div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="../static/vendor/jquery/jquery.min.js"></script>
+<script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Core plugin JavaScript-->
+<script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- d3 f core JavaScript -->
+<script src="../static/vendor/d3/d3.js"></script>
+<!-- leaflet core JavaScript -->
+<script src="../static/vendor/leaflet/leaflet.js"></script>
+<!-- Custom scripts for all pages-->
+<script src="../static/js/sb-admin.min.js"></script>
+<!--leaflet map JavaScript-->
+<script src="../static/js/init.js"></script>
+<script src="../static/js/equake.magnitude.js"></script>
+<script src="../static/js/index.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/leaflet.timeline@1.2.0/dist/leaflet.timeline.min.js"></script>-->
+<!--<script src="../static/js/equake.timeline.js"></script>-->
+
+
+<!-- Page level plugin JavaScript-->
+<!--<script src="vendor/chart.js/Chart.min.js"></script>-->
+<!--<script src="vendor/datatables/jquery.dataTables.js"></script>-->
+<!--<script src="vendor/datatables/dataTables.bootstrap4.js"></script>-->
+
+<!-- Demo scripts for this page-->
+<!--<script src="../static/js/demo/datatables-demo.js"></script>-->
+<!--<script src="../static/js/demo/chart-area-demo.js"></script>-->
+
+</body>
+</html>
+
