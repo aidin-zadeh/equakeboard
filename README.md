@@ -1,5 +1,5 @@
 
-# earthquakeboard
+# EQuake Board
 
 ## Background
 
@@ -20,7 +20,7 @@
 ├── reports             <- Generated analysis as HTML, PDF, Latex, etc.
 │   ├── figures         <- Generated graphics and figures used in reporting
 │   └── logs            <- Generated log files  
-└── earthquakeboard
+└── equakeboard
     ├── conf
     ├── data            <- data utilized in this project
     │   ├── ext
@@ -36,7 +36,7 @@ Install python dependencies from  `requirements.txt` using conda.
 conda install --yes --file conda-requirements.txt
 ```
 
-Or create a new conda environment `<new-env-name>` by importing a copy of the working conda environment `conda-earthquakeboard.yml` at the project root directory:
+Or create a new conda environment `<new-env-name>` by importing a copy of the working conda environment `conda-equakeboard.yml` at the project root directory:
 ```bash
 conda env create --name <new-env-name> -f conda-earthquakeboard.yml
 ```
